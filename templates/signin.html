@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<body>
+    <header>
+        <h1>Sign in</h1>
+    </header>
+    <main>
+        <form method="POST" action="{{ url_for('register') }}">
+            <p><input class="signin-form-input" id="user-name" type="text" name="user-name" placeholder="Full Name" required/></p>
+
+            <p><input class="signin-form-input" id="login" type="text" name="login" placeholder="Login" required/></p>
+
+            <p><input class="signin-form-input" id="password" type="text" name="password" placeholder="********" required/></p>
+
+            <p><input class="signin-form-input" id="password-check" type="text" name="password-check" placeholder="Re-type your password" required/></p>
+
+            <p><input class="signin-form-input" id="email" type="text" name="email" placeholder="youremail@something.com" required/></p>
+
+            <p><input class="signin-form-input" id="birth-date" type="date" name="birth-date" required/></p>
+
+            <p><input class="sign-in" type="submit" value="Sign in"/></p>
+        </form>
+    </main>
+</body>
+</html>
